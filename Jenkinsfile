@@ -1,8 +1,9 @@
+#!groovy
 GIT_REPO = "https://github.com/PIPIRAN/simple-java-maven-app.git"
 TARGET_JAR = "herschel-backend.jar"
 TARGET_DIR = "D:\\workspace\\simple-java-maven-app"
 
-node {
+pipeline {
   cleanWs()
   deleteDir()
 
@@ -25,5 +26,4 @@ node {
     sh "ls -lat project"
     dockerRun.maven(command: "mvn clean install -DskipTests")
   }
-
 }
