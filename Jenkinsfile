@@ -1,5 +1,3 @@
-@Library( "digibridge-library@master" ) _
-
 GIT_REPO = "https://github.com/PIPIRAN/simple-java-maven-app.git"
 TARGET_JAR = "herschel-backend.jar"
 TARGET_DIR = "D:\\workspace\\simple-java-maven-app"
